@@ -39,35 +39,35 @@
     <p id="button001"></p>
 
     <script>
-        var capitals001 = ["Sodium's symbol is: Na? K? C?", "Potassium's symbol is: Na? K? C?", "Carbon's symbol is: Na? K? C?", "What kind of bonding is this?"];
+        var capitals001 = ["Sodium's symbol is: Na? K? C?", "Potassium's symbol is: Na? K? C?", "Carbon's symbol is: Na? K? C?", "What kind of bonding is this? <a href="https://ibb.co/QpwSk2Q"><img src="https://i.ibb.co/QpwSk2Q/li-f-elec-transfer.png" alt="li-f-elec-transfer" border="0"></a>"];
         var countries001 = ["Na", "K", "C", "Ionic"];
         var random001 = Math.floor(Math.random() * capitals001.length);
 
         function submit001() {
             var b = input001.value;
             if (random001 == 0 && b == countries001[0]) {
-                document.getElementById("answer001").innerHTML = "Correct..";
+                document.getElementById("answer001").innerHTML = "Correct.";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
                 document.getElementById("disappear001").innerHTML = "";
 
             } else if (random001 == 1 && b == countries001[1]) {
-                document.getElementById("answer001").innerHTML = "Correct..";
+                document.getElementById("answer001").innerHTML = "Correct.";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
                 document.getElementById("disappear001").innerHTML = "";
 
             } else if (random001 == 2 && b == countries001[2]) {
-                document.getElementById("answer001").innerHTML = "Correct..";
+                document.getElementById("answer001").innerHTML = "Correct.";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
                 document.getElementById("disappear001").innerHTML = "";
 
             } else if (random001 == 3 && b == countries001[3]) {
-                document.getElementById("answer001").innerHTML = "Correct..";
+                document.getElementById("answer001").innerHTML = "Correct.";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
 document.getElementById("disappear001").innerHTML = "";
             }
 
             else {
-                document.getElementById("answer001").innerHTML = "Incorrect..";
+                document.getElementById("answer001").innerHTML = "Incorrect.";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
                 document.getElementById("disappear001").innerHTML = "";
             }
