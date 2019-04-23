@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GAME-TOWN & TECH CHEX</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/About & CV">About & CV</a></li>
+        		<li><a href="/Class Resources">Class Resources</a></li>
+        		<li><a href="/PowerPoint Notes">PowerPoint Notes</a></li>
+			<li><a href="/Class Records & HOF">Class Records & HOF</a></li>
+			<li><a href="/Tech Chex & Game-Town">Tech Chex/Game-Town</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+			<center><h1>GAME-TOWN & TECH CHEX</h1></center>
+			<p align="center">
+					<a href="https://imgbb.com/"><img src="https://image.ibb.co/cqqhvV/CHEF-FLOYARDEE.png" alt="CHEF-FLOYARDEE" border="0"></a><br />
+			</p>
+			<p>This page is the digital home of the Chef's many GAME-TOWN Games and TECH CHEX Applications used in class as Academic Objective Accomplishers!</a></p>
+		<center><p><b>Placeholder: Game Under Construction</b></a></p></center>
+<center><p><b>Controls are as follows:</b></p>
+<p>A - "z"</p>
+<p>B - "x"</p>
+<p>Up - "Arrow Up"</p>
+<p>Down - "Arrow Down"</p>
+<p>Left - "Arrow Left"</p>
+<p>Right - "Arrow Right"</p>
+<p>Start - "Enter"</p>
+<p>Select - "Space"</p></center>
+		<center><div>
+	<div id="emulator">
+		<p>To play this game, please, download the latest Flash player!</p>
+		<br>
+		<a href="http://www.adobe.com/go/getflashplayer">
+			<img src="//www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png" alt="Get Adobe Flash player"/>
+		</a>
+	</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+<script type="text/javascript">
+
+	var resizeOwnEmulator = function(width, height)
+	{
+		var emulator = $('#emulator');
+		emulator.css('width', width);
+		emulator.css('height', height);
+	}
+
+	$(function()
+	{
+		function embed()
+		{
+			var emulator = $('#emulator');
+			if(emulator)
+			{
+				var flashvars = 
+				{
+					system : 'gb',
+					url : '/flash/ROM/pokemonlue.gb' 
+				};
+				var params = {};
+				var attributes = {};
+				
+				params.allowscriptaccess = 'sameDomain';
+				params.allowFullScreen = 'true';
+				params.allowFullScreenInteractive = 'true';
+				
+				swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
+			}
+		}
+		
+		embed();
+	});
+	
+</script></center>
+		
+		<center><p><b>Chef Floyardee's Rocks Twitter Page Feed</b></a></p></center>
+<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/ChefFloydsRocks?ref_src=twsrc%5Etfw">Tweets by ChefFloydsRocks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+		
+</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cfloyd493@gmail.com">Email</a></li>
+                        <li><a href="https://cheffloyardee.github.io/">School Website</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
