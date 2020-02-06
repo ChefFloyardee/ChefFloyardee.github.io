@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Pokémon Floyd</title>
-		<link rel="shortcut icon" href="MrFloydLogo.png">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
+<head>
+  <title>Pokémon Floyd</title>
+  <link href="reset.css" rel="stylesheet">
+  <style>
+    /* https://css-tricks.com/box-sizing/ */
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    .main {
+      display: none;
+      position: absolute;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 1fr auto;
+    }
+    .main.ready {
+      display: grid;
+    }
+    canvas {
+      width: 480px;
+      height: 432px;
+      border: 1px solid gray;
+      grid-column: 1;
+      grid-row: 1;
+      align-self: center;
+      justify-self: center;
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+    }
+    .sidebar {
+      grid-column: 2;
+      grid-row: 1 / 2;
+      overflow: auto;
+      transition: width .2s ease-in-out;
+    }
+    .overlap {
+      position: absolute;
+      grid-column: 1 / 2;
+      grid-row: 1;
+      align-self: center;
+      justify-self: center;
+    }
+    .files {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      height: 70%;
+      background-color: white;
+      border: 1px solid gray;
+      border-radius: 3px;
+      padding: 1em;
+    }
+    .close-button {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 2px;
+    }
+    .close-button:hover {
+      background-color: rgba(192, 192, 192, 0.8);
+      border-radius: 10px;
+    }
+    .files-header {
+      font-size: 125%;
+      font-weight: bold;
+      padding-bottom: 8px;
+      margin: 0 auto;
+    }
+    .files-content {
+      flex-grow: 1;
+      overflow: auto;
+    }
+    .files-content.empty {
+      font-size: 125%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .files-content > table {
+      border-collapse: collapse;
+      border-spacing: 12px;
+    }
+    .files-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      padding-top: 8px;
+    }
+    #files-list {
+      margin: 8px 0;
+      overflow: auto;
+    }
+    .files thead {
+      border-bottom: 1px solid gray;
+    }
+    .file:hover {
+      background-color: rgba(192, 192, 192, 0.8);
+      cursor: pointer;
+    }
+    .file.selected {
+      background-color: rgba(128, 128, 192, 0.8);
+    }
+    .file-name {
+      width: 100%;
+      padding: 4px;
+    }
+    .file-size, .file-date {
+      padding: 4px;
+    }
+    .file-image {
+      border: 1px solid gray;
+      width: 160px;
+      height: 144px;
+      margin-left: auto;
+    }
+    .top-line {
+      border-top: 1px solid gray;
+    }
+    #volume {
+      height: 1em;
+      width: 75px;
+    }
+    .bar-wrap {
+      width: 100%;
+      padding: 8px 0;
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+    .bar {
+      display: grid;
+      width: 800px;
+      margin: auto;
+      grid-template-columns: auto 1fr auto;
+    }
+    #rewind {
+      height: 1em;
+      width: 100%;
+      grid-column: 2;
+      margin : 2px;
+    }
+    #rewindTime {
+      padding: 0 8px;
+    }
+    .left {
+      grid-column: 1;
+    }
+    .right {
+      grid-column: 3;
+    }
+  </style>
+</head>
 	<body>
 		<nav>
     	
