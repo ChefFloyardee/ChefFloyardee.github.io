@@ -181,13 +181,7 @@
 				<p style="background-color:white;color:white;">------------</p>
 				<p style="background-color:white;color:white;">------------</p>
 				<p style="background-color:white;color:white;">------------</p>
-				<p style="background-color:white;color:white;">------------</p>
-				  <div class="files overlap" v-if="files.show">
-				  <div class="bar-wrap top-line">
-				<p style="background-color:white;color:white;">------------</p>
-				<p style="background-color:white;color:white;">------------</p>
-				</center>
-		<body>
+				<body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/idb@2.1.3/lib/idb.min.js"></script>
   <div class="main">
@@ -198,7 +192,7 @@
     </canvas>
     <div class="sidebar" hidden>
     </div>
-    
+    <div class="files overlap" v-if="files.show">
       <div class="files-header">Files</div>
       <label class="close-button" @click="toggleOpenDialog">&times;</label>
       <div class="files-content" v-bind:class="{empty:isFilesListEmpty}">
@@ -242,7 +236,7 @@
             :src="selectedFileImageSrc"></img>
       </div>
     </div>
-  
+    <div class="bar-wrap top-line">
       <div class="bar">
         <div class="left">
           <button
@@ -285,6 +279,11 @@
   <script src="binjgb.js"></script>
   <script src="demo.js"></script>
 				</body>
+				<p style="background-color:white;color:white;">------------</p>
+				<p style="background-color:white;color:white;">------------</p>
+				<p style="background-color:white;color:white;">------------</p>
+				</center>
+		
 		
 		
 		<footer>
