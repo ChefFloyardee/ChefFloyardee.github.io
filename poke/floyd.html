@@ -182,6 +182,8 @@
 				<p style="background-color:white;color:white;">------------</p>
 				<p style="background-color:white;color:white;">------------</p>
 				<p style="background-color:white;color:white;">------------</p>
+				  <div class="files overlap" v-if="files.show">
+				  <div class="bar-wrap top-line">
 				<p style="background-color:white;color:white;">------------</p>
 				<p style="background-color:white;color:white;">------------</p>
 				</center>
@@ -196,7 +198,7 @@
     </canvas>
     <div class="sidebar" hidden>
     </div>
-    <div class="files overlap" v-if="files.show">
+    
       <div class="files-header">Files</div>
       <label class="close-button" @click="toggleOpenDialog">&times;</label>
       <div class="files-content" v-bind:class="{empty:isFilesListEmpty}">
@@ -240,7 +242,7 @@
             :src="selectedFileImageSrc"></img>
       </div>
     </div>
-    <div class="bar-wrap top-line">
+  
       <div class="bar">
         <div class="left">
           <button
