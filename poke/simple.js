@@ -67,7 +67,7 @@ const vm = new VM();
 
 // Load a ROM.
 (async function go() {
-  let response = await fetch('PokémonFloydVersion.gb');
+  let response = await fetch('cpu_instrs.gb');
   let romBuffer = await response.arrayBuffer();
   Emulator.start(await binjgbPromise, romBuffer, null);
   emulator.setBuiltinPalette(vm.pal);
