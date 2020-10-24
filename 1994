@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chase Floyd Throughout The Years: The Chef's Life in Pictures!</title>
+		<link rel="shortcut icon" href="MrFloydLogo.png">
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/About & CV">About & CV</a></li>
+        		<li><a href="/Class Resources">Class Resources</a></li>
+        		<li><a href="/PowerPoint Notes">PowerPoint Notes</a></li>
+			<li><a href="/Class Records & HOF">Class Records & HOF</a></li>
+			<li><a href="/Tech Chex & Game-Town">Tech Chex/Game-Town</a></li>
+			<center><li><a href="/Scientific Information">Scientific Information</a></li>
+			<li><a href="https://chasefloydinc.github.io">CFI</a></li></center>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+			
+		<center><center><h1>1994</h1></center>
+		<center><center><h2>Baby Chay: Part Deux</a></h2></center>
+    <img src="Baby Beach.jpg" alt="Baby Cay and Chay at the BEACH for the FIRST TIME EVER!" title="Baby Cay and Chay at the BEACH for the FIRST TIME EVER!" style="width:262px;height:304px; border=" 0"="">
+				<p>Placeholder!</p>
+				
+		<p><a href="/1995">1995</a></p></a></p>					
+		<p><a href="/About & CV">Click here to return to Mr. Floyd's About & CV page!</a></p></a></p>
+		<p><a title="Click here to learn even more about Mr. Floyd!" href="https://www.youtube.com/user/ChaseFloydInc">Click here to learn even more about Mr. Floyd!</a></p>		
+		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:cfloyd493@gmail.com">Email</a></li>
+                        <li><a href="https://cheffloyardee.github.io/">School Website</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
