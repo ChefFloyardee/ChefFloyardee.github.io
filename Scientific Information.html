@@ -860,16 +860,13 @@
     <title>Random Questions</title>
 </head>
 <body>
-    <p id="message001">ANSWER or SOLVE the following --> <text id="name001"></text></p>
-    <div id="disappear001">
-    <input type="text" id="input001" /><button onclick="submit001()">Submit</button>
-        </div>
+	<p id="message001">THE CHEF SERVING UP SOME WISDOM --> <i><u><text id="name001"></text></p></u></i>
     <p id="answer001"></p>
     <p id="button001"></p>
 
     <script>
-        var capitals001 = ["_____ is the study of the INTERACTIONS between living things and the ENVIRONMENT!", "Species. Population. Community. _____. Biome. Biosphere.", "If Turtle Hunters are BIOTIC Factors, then Water pH is a _____ FACTOR?", "_____ Factors limit population growth.", "Is the climate in the Tundra and the Taiga HOT or COLD?", "Birds having different beak shapes, and thus different means of surviving in their ecosystem, is an example of what Ecological Concept?", "I am green. I eat turtles. I have other organisms attached to my back that absorb nutrients from my dead skin. I compete for food with sharks. Am I a Consumer, Producer, or Decomposer?", "Which is more complex aka shows more relationships; Food Chain or Food Web?", "What is the maximum number of organisms a given environment can support?", "Rabbits competing with Turtles for food would be a Biotic or Abiotic Factor?", "True or False; A lion killing a wildebeest is a type of Symbiosis?", "True or False; In Mutualism only one organism benefits?", "True or False; This picture describes Commensalism? <a href=symbiosis.png>Open in a new TAB to see the Image!</a>", "_ Species tend to be smaller, less complex, have many offspring, and do not live very long.", "What kind of graph is this? <a href=https://fractalfoundation.org/OFCA/predatorprey.jpg>Open in a new TAB to see the Image!</a>", "_____ are a Mutualistic Symbiosis between Fungi and Algae/Cyanobacteria?", "Tundra. Taigia. Deciduous Forest. Grassland. _______. These are the 6 Major Land Biomes!", "BELIEVE in _____"];
-        var countries001 = ["Ecology", "Ecosystem", "Abiotic", "Limiting", "Cold", "Niche", "Consumer", "Food Web", "Carrying Capacity", "Biotic", "False", "False", "True", "R", "Predator and Prey", "Lichens", "Rain Forest", "Yourself"];
+        var capitals001 = ["BELIEVE in YOURSELF; it's as easy as HYDROGEN, HELIUM, and LITHIUM!", "SUCCESS breeds SUCCESS!", "If THEY can do it so can YOU!", "LET THE UNITS GUIDE YOU!", "SCIENCE is a 7 letter word, so you just KNOW that it'll be your lucky subject!", "If CHEFS can DO science, then so can you!", "Treat everything like riding a bike; at one point in time you will be unable to do it, but with PRACTICE it'll become EASY!", "Never FEAR any subject in school; EMBRACE it instead!", "NEVER ask 'Why bother'; INSTEAD ask 'WHY NOT'!", "Make YOURSELF proud!", "You are all AKILA!", "Anyone can change the perceptions about themselves and conquer anything!", "Never again accept the idea that you have 'failed' at something, because with hard work and determination you can change ANYTHING about yourself!", "It is NEVER too late!", "Be CONFIDENT; no one can ever be YOU!", "Every morning, spring out of bed and tell yourself that you have NO DOUBT in your mind that you CAN and WILL do whatever it is that you set your mind to, since you SO TOTALLY can!", "Set challenging goals, ones that will stretch you thin but not enough to make you snap. Make sure your goals are at your CURRENT level, so when you CONQUER them you'll be ready for the NEXT level!", "BE your BEST self!", "SMART is not something you are; it is something you BECOME!"];
+        var countries001 = ["Ecology", "Ecosystem", "Abiotic", "Limiting", "Cold", "Niche", "Consumer", "Food Web", "Carrying Capacity", "Biotic", "False", "False", "True", "R", "Predator and Prey", "Lichens", "Rain Forest", "Yourself", "Goals"];
         var random001 = Math.floor(Math.random() * capitals001.length);
         function submit001() {
             var b = input001.value;
@@ -961,9 +958,16 @@ document.getElementById("disappear001").innerHTML = "";
                 document.getElementById("answer001").innerHTML = "Brah! That was like, so totally CORRECT!";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
 document.getElementById("disappear001").innerHTML = "";
+			 } else if (random001 == 17 && b == countries001[17]) {
+                document.getElementById("answer001").innerHTML = "Brah! That was like, so totally CORRECT!";
+                document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
+document.getElementById("disappear001").innerHTML = "";
+		     } else if (random001 == 18 && b == countries001[17]) {
+                document.getElementById("answer001").innerHTML = "Brah! That was like, so totally CORRECT!";
+                document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
+document.getElementById("disappear001").innerHTML = "";
 		    
-		    
-		       } else if (random001 == 17 && b == countries001[17]) {
+		       } else if (random001 == 19 && b == countries001[18]) {
                 document.getElementById("answer001").innerHTML = "Correct! You all have INCREDIBLE potential! I truly do believe in EVERY SINGLE one of you students! You CAN and WILL go on to do GREAT, POSITIVE things in our world right after you ACE this FINAL! ";
                 document.getElementById("button001").innerHTML = "<button onclick=btn001()>Next</button>";
 document.getElementById("disappear001").innerHTML = "";
@@ -984,7 +988,6 @@ document.getElementById("disappear001").innerHTML = "";
         }
     </script>
 </body>
-</html>
 		<center><h1>Class Links</h1></center>
 			<center><p><a href="/AOAs">AOAs</a></p></a></p>
 			<p><a href="/Class Resources">Class Resources</a></p></a></p>
